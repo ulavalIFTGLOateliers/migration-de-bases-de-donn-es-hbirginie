@@ -15,8 +15,8 @@ class Database:
         self.host = os.environ.get("HOST")
         self.port = int(os.environ.get("PORT"))
         self.database = os.environ.get("DATABASE")
-        self.user = 'root'
-        self.password = 'root'
+        self.user = os.environ.get("USER")
+        self.password = os.environ.get("PASSWORD")
 
         self._open_sql_connection()
 
